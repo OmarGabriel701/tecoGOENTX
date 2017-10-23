@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	background-image: url("http://pa1.narvii.com/6447/1363588e32c98ac36cad74a89a9acf09a99d867f_hq.gif");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: contain;
+	background-position: center;
+}
