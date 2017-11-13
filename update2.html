@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>BICI UV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      background-image: url(fondo-azul.jpg)
+  }
+  h1 {
+    margin: 10px 0 30px 0;
+      letter-spacing: 2px;      
+      font-size: 20px;
+      color: #273746;
+  }
+
+  p {
+    color:#fff;
+  }
+  
+  h1{
+      color: #E8F2FF;
+  }
+
+  h2 {
+    color:#D6D6D6;
+  }
+
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 2px;      
+      font-size: 20px;
+      color: #fff;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+     /* -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  /*Contenedor Medio bici UV */
+  .bg-1 {
+      background: #0072C5;
+      color: #0072C5;
+  }
+
+
+  /*color de letra*/
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  /*letras de contenedores del apartado de BICI UV*/
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+
+  /*botones del apartado de BICI UV*/
+  .btn {
+      padding: 10px 20px;
+      background-color: #0062A2;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  /*margenes*/
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  /*Encabezados de ventana emergente, BICI UV*/
+  .modal-header, h4, .close {
+      background-color: #005DA1;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+/*Encabezados y cuerpo ventana emergente*/
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+      /*background-color: #333;
+      color: #fff !important;*/
+  }
+  
+  .nav-tabs li a {
+      color: #C50000;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+
+  /*colores barra de navegacion superior*/
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #0072C5;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+
+  /*color de la letra de botones en barra de navegacion sin seleccionado*/ 
+  .navbar li a, .navbar .navbar-brand { 
+      color: #fff !important;
+  }
+
+  /*color de letras en barra de navegacion*/
+  .navbar-nav li a:hover {
+      color: #3ADF00 !important;
+  }
+
+   /*cambia color de item seleccionado en el nav bar*/
+  .navbar-nav li.active a {
+      color: #064BBC !important;
+
+      /*background-color: #064BBC !important; */
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  /*colores en los margenes*/
+  .open .dropdown-toggle {
+      color: #000000;
+      background-color: #000000 !important;
+  }
+  .dropdown-menu li a {
+      color: #B406BC   !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #0062A2;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="beta" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="#beta">BETA</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="forge.jpg" alt="New York" width="800" height="300">
+        <div class="carousel-caption">
+          <h1> "La remodelación" </h1>
+          <p>Hora de usar el martillo y el yunque... </p>
+        </div>      
+      </div>
+
+
+<div class="table-responsive">
+<table class="table table-hover">
+<div id="beta" class="container">
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+     <h3 class="text-center">5 de Noviembre de 2017</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"></a></li>
+  </ul>
+  
+
+      <h2>"Identidad y Estilo" </h2>
+      <p align="justify"><b> -> G</b>racias a la retroalimentación de todos los Testers, como siempre, los escuchamos, aquí están los cambios de este parche:</p>
+      <p align="justify"><b> -> H</b>emos añadido un cambio visual, tanto en la barra de navegación principal, como en los botones.</p>
+      <p align="justify"><b> -> L</b>a página principal y las secciones de actualización ya se encuentran personalizadas</p> 
+      <p align="justify"><b> -> S</b>e corrigió el problema de visualización en dispositivos con una resolución de 480 x 800</p> 
+      <p align="justify"><b> -> Y</b>a es posible visualizar la página en navegadores Firefox y Edge</p>
+      <p align="justify"><b> -> P</b>or el momento es todo en esta actualización, tal vez sea pequeña a diferencia de la anterior pero es por la llegada de esta semana de los programadores en PHP (y el mega puente de 5 días que tomamos \u/ ), ya verán que se viene, manténgase atentos a esta sección.</p>
+    
+      <p align="justify"><b> -> S</b>in algo más, les deseo un buen inicio de semana a todos los estudiantes, y no lloren los que regresan de sus ranchitos :'( </p>
+
+      <p align="right"><b> LapinTec </b> </p>
+
+    </div>
+    
+    </div>
+    
+  </div>
+  </div>
+</table>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#beta" data-toggle="tooltip" title="Regresar">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Sección unicamente disponible en el BETA. Puede haber cambios en el producto final</p> 
+</footer>
+
+</body>
+</html>
